@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rabianr/capacitor-line-login.git"
+    "url": "git+https://github.com/simon80119/capacitor-line-login.git"
   },
   "bugs": {
-    "url": "https://github.com/rabianr/capacitor-line-login/issues"
+    "url": "https://github.com/simon80119/capacitor-line-login/issues"
   },
   "keywords": [
     "capacitor",
