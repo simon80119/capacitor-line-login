@@ -1,0 +1,158 @@
+{
+  "api": {
+    "name": "LineLoginPlugin",
+    "slug": "lineloginplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "setup",
+        "signature": "(options: SetupOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "SetupOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "SetupOptions"
+        ],
+        "slug": "setup"
+      },
+      {
+        "name": "login",
+        "signature": "() => Promise<LoginResult>",
+        "parameters": [],
+        "returns": "Promise<LoginResult>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "LoginResult"
+        ],
+        "slug": "login"
+      },
+      {
+        "name": "logout",
+        "signature": "() => Promise<Result>",
+        "parameters": [],
+        "returns": "Promise<Result>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "Result"
+        ],
+        "slug": "logout"
+      },
+      {
+        "name": "getAccessToken",
+        "signature": "() => Promise<GetAccessTokenResult>",
+        "parameters": [],
+        "returns": "Promise<GetAccessTokenResult>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "GetAccessTokenResult"
+        ],
+        "slug": "getaccesstoken"
+      },
+      {
+        "name": "refreshAccessToken",
+        "signature": "() => Promise<GetAccessTokenResult>",
+        "parameters": [],
+        "returns": "Promise<GetAccessTokenResult>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "GetAccessTokenResult"
+        ],
+        "slug": "refreshaccesstoken"
+      },
+      {
+        "name": "verifyAccessToken",
+        "signature": "() => Promise<Result>",
+        "parameters": [],
+        "returns": "Promise<Result>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "Result"
+        ],
+        "slug": "verifyaccesstoken"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "SetupOptions",
+      "slug": "setupoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "channelId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "LoginResult",
+      "slug": "loginresult",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "data",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "{ accessToken: string; estimatedExpirationTimeMillis: number; userID: string; email?: string | undefined; displayName: string; pictureUrl?: string | undefined; }"
+        }
+      ]
+    },
+    {
+      "name": "Result",
+      "slug": "result",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "code",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "'SUCCESS' | 'CANCEL' | 'UNKNOWN_ERROR'"
+        }
+      ]
+    },
+    {
+      "name": "GetAccessTokenResult",
+      "slug": "getaccesstokenresult",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "data",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "{ accessToken: string; estimatedExpirationTimeMillis: number; }"
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
